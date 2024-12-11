@@ -1,9 +1,12 @@
+import 'package:bilbakalim/styles/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class BouncingImage extends StatefulWidget {
-  final VoidCallback onTap; // Tıklama işlemi için callback
+  final VoidCallback onTap;
+  final String text;
 
-  const BouncingImage({Key? key, required this.onTap}) : super(key: key);
+  const BouncingImage({Key? key, required this.onTap, required this.text})
+      : super(key: key);
 
   @override
   _BouncingImageState createState() => _BouncingImageState();
@@ -60,9 +63,13 @@ class _BouncingImageState extends State<BouncingImage>
             width: 150,
             height: 150,
           ),
-          Text(
-            "GENEL\nBANKACILIK",
-            style: TextStyle(color: Colors.white),
+          SizedBox(
+            width: 120,
+            child: Text(
+              widget.text,
+              textAlign: TextAlign.center,
+              style: textOnBaloonStyle,
+            ),
           )
         ]),
       ),

@@ -1,0 +1,48 @@
+{
+    "questions": [
+        {
+            "id": 25,
+            "question": "Kredi Sayılan İşlemler ile ilgili olarak aşağıdakilerden hangisi doğrudur?",
+            "options": {
+                "A": "Aval ve ciro gibi taahhütler kredi sayılmaz.",
+                "B": "Repo ve ters repo işlemlerinden alacaklar kredi sayılmaz.",
+                "C": "Kontrgaranti ve kefaletler kredi sayılmaz.",
+                "D": "Çıkarılmış tahvil ve benzeri sermaye piyasası araçları kredi sayılmaz."
+            },
+            "answer": "D"
+        },
+        {
+            "id": 26,
+            "question": "Aşağıdaki durumlardan hangisi sonucunda kefalet sona ermektedir?",
+            "options": {
+                "A": "Borçlunun ölümü hâlinde",
+                "B": "Kefilin ölümü hâlinde",
+                "C": "Sözleşme kurulmasından 10 yıl geçmesi durumunda",
+                "D": "Kefil olan tüzel kişiliğin sona ermesi hâlinde"
+            },
+            "answer": "D"
+        },
+        {
+            "id": 27,
+            "question": "Gider tahakkukları hangi mali tablonun hangi tarafında gösterilir?",
+            "options": {
+                "A": "Gelir Tablosu - Gider Tarafı",
+                "B": "Gelir Tablosu - Gelir Tarafı",
+                "C": "Bilanço - Aktif Tarafı",
+                "D": "Bilanço - Pasif Tarafı"
+            },
+            "answer": "D"
+        },
+        {
+            "id": 28,
+            "question": "Aşağıdakilerden hangisinde gayri nakdi kredilerden teminat mektuplarının TL ve yabancı para memzuç kodları sırasıyla verilmiştir?",
+            "options": {
+                "A": "200 - 201",
+                "B": "200 - 250",
+                "C": "250 - 251",
+                "D": "250 - 270"
+            },
+            "answer": "C"
+        }
+    ]
+}
