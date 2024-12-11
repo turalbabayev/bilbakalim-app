@@ -1,4 +1,5 @@
 import 'package:bilbakalim/pages/homepage.dart';
+import 'package:bilbakalim/pages/girisekranlari/loginpage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +12,8 @@ class BilBakalim extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Homepage(),
+      debugShowCheckedModeBanner: false,
+      home: LoginPage(),
     );
   }
 }
