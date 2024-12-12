@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class TestCompletionScreen extends StatelessWidget {
-  int correct;
-  int uncorrect;
-  TestCompletionScreen(
+class TestCompletionPage extends StatelessWidget {
+  final int correct;
+  final int uncorrect;
+  const TestCompletionPage(
       {super.key, required this.correct, required this.uncorrect});
 
   @override

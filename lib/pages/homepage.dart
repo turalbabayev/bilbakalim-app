@@ -2,10 +2,11 @@
 
 import 'package:bilbakalim/components/flying_baloon.dart';
 import 'package:bilbakalim/pages/bolumler/bolum.dart';
+import 'package:bilbakalim/pages/diger.dart';
 import 'package:flutter/material.dart';
 
-class Homepage extends StatelessWidget {
-  Homepage({super.key});
+class HomePage extends StatelessWidget {
+  HomePage({super.key});
 
   void goPage(Widget page, BuildContext context) {
     Navigator.push(
@@ -21,7 +22,7 @@ class Homepage extends StatelessWidget {
     "Krediler",
     "Muhasebe",
     "Genel kültür",
-    "Önemli terimler",
+    "Önemli Terimler",
     "Diğer",
   ];
 
@@ -35,6 +36,8 @@ class Homepage extends StatelessWidget {
           image: DecorationImage(
             image: AssetImage("assets/images/background.png"),
             fit: BoxFit.fill,
+            colorFilter: ColorFilter.mode(
+                Colors.black.withOpacity(0.05), BlendMode.darken),
           ),
         ),
         child: GridView.builder(
@@ -48,7 +51,10 @@ class Homepage extends StatelessWidget {
             return BouncingImage(
               text: title,
               onTap: () {
-                goPage(Bolum(appBarTitle: title), context);
+                if (index != 7)
+                  goPage(BolumPage(appBarTitle: title), context);
+                else
+                  goPage(DigerPage(), context);
               },
             );
           },
