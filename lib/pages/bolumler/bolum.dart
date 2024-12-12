@@ -4,7 +4,7 @@ import 'package:bilbakalim/styles/button_styles.dart';
 import 'package:flutter/material.dart';
 
 class BolumPage extends StatelessWidget {
-  String appBarTitle;
+  final String appBarTitle;
   BolumPage({super.key, required this.appBarTitle});
 
   final List<String> _bolumler = [
