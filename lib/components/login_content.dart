@@ -10,7 +10,7 @@ class LoginContent extends StatelessWidget {
       width: 300,
       height: 400,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.white.withOpacity(0.8),
         borderRadius: BorderRadius.circular(20),
         boxShadow: [
           BoxShadow(
@@ -26,7 +26,7 @@ class LoginContent extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              "Login",
+              "Giriş Yap",
               style: TextStyle(
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
