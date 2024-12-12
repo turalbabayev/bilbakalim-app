@@ -2,14 +2,14 @@ import 'dart:convert';
 import 'package:bilbakalim/pages/test_screen/result.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:confetti/confetti.dart'; // Konfeti için gerekli
+import 'package:confetti/confetti.dart';
 
-class QuestionScreen extends StatefulWidget {
+class QuestionPage extends StatefulWidget {
   @override
-  _QuestionScreenState createState() => _QuestionScreenState();
+  _QuestionPageState createState() => _QuestionPageState();
 }
 
-class _QuestionScreenState extends State<QuestionScreen> {
+class _QuestionPageState extends State<QuestionPage> {
   List<dynamic> _questions = [];
   int _currentQuestionIndex = 0;
   int correct = 0;
@@ -17,8 +17,10 @@ class _QuestionScreenState extends State<QuestionScreen> {
   String? _selectedAnswer;
   bool _isCorrect = false;
   bool _isAnswered = false;
-  final ConfettiController _confettiController =
-      ConfettiController(duration: const Duration(seconds: 2));
+  final ConfettiController _confettiController = ConfettiController(
+    duration: const Duration(seconds: 2),
+    particleStatsCallback: (stats) {},
+  );
 
   @override
   void initState() {
@@ -65,7 +67,7 @@ class _QuestionScreenState extends State<QuestionScreen> {
         context,
         MaterialPageRoute(
           builder: (context) =>
-              TestCompletionScreen(correct: correct, uncorrect: notcorrect),
+              TestCompletionPage(correct: correct, uncorrect: notcorrect),
         ),
       );
     }
@@ -143,16 +145,43 @@ class _QuestionScreenState extends State<QuestionScreen> {
                   );
                 }),
                 const Spacer(),
-                _isAnswered
-                    ? ElevatedButton(
-                        onPressed: _isAnswered ? _nextQuestion : null,
-                        child: Text(
-                          _currentQuestionIndex < _questions.length - 1
-                              ? "Diğer Soruya Geç"
-                              : "Testi Bitir",
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    _isAnswered
+                        ? ElevatedButton(
+                            onPressed: _isAnswered ? _nextQuestion : null,
+                            child: Text(
+                              _currentQuestionIndex < _questions.length - 1
+                                  ? "Diğer Soruya Geç"
+                                  : "Testi Bitir",
+                            ),
+                          )
+                        : const SizedBox(),
+                    Row(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Colors.white,
+                          foregroundColor: Colors.green.shade300,
+                          child: IconButton(
+                              onPressed: () {
+                                print('Soru begenildi');
+                              },
+                              icon: Icon(Icons.thumb_up_alt_outlined)),
                         ),
-                      )
-                    : const SizedBox(),
+                        CircleAvatar(
+                          backgroundColor: Colors.white,
+                          foregroundColor: Colors.red.shade300,
+                          child: IconButton(
+                              onPressed: () {
+                                print('Soru begenilmedi');
+                              },
+                              icon: Icon(Icons.thumb_down_alt_outlined)),
+                        ),
+                      ],
+                    )
+                  ],
+                ),
               ],
             ),
           ),

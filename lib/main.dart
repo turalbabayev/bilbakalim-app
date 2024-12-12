@@ -1,4 +1,4 @@
-import 'package:bilbakalim/pages/homepage.dart';
+import 'package:bilbakalim/router.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,8 +10,10 @@ class BilBakalim extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Homepage(),
+    return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
+      title: 'Bil Bakalim',
+      routerConfig: router,
     );
   }
 }

@@ -3,9 +3,9 @@ import 'package:bilbakalim/styles/background_decorations.dart';
 import 'package:bilbakalim/styles/button_styles.dart';
 import 'package:flutter/material.dart';
 
-class Bolum extends StatelessWidget {
+class BolumPage extends StatelessWidget {
   String appBarTitle;
-  Bolum({super.key, required this.appBarTitle});
+  BolumPage({super.key, required this.appBarTitle});
 
   final List<String> _bolumler = [
     "Bankacılık tarihi",
@@ -43,7 +43,7 @@ class Bolum extends StatelessWidget {
                     onPressed: () {
                       Navigator.push(context, MaterialPageRoute(
                         builder: (context) {
-                          return QuestionScreen();
+                          return QuestionPage();
                         },
                       ));
                     },

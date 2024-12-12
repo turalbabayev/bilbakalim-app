@@ -62,6 +62,8 @@ class _BouncingImageState extends State<BouncingImage>
             'assets/images/baloon.png',
             width: 150,
             height: 150,
+            color: Colors.black.withOpacity(0.0),
+            colorBlendMode: BlendMode.darken,
           ),
           SizedBox(
             width: 120,
