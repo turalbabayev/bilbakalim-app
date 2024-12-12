@@ -4,16 +4,6 @@ import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
 import 'package:flutter/foundation.dart'
     show defaultTargetPlatform, kIsWeb, TargetPlatform;
 
-/// Default [FirebaseOptions] for use with your Firebase apps.
-///
-/// Example:
-/// ```dart
-/// import 'firebase_options.dart';
-/// // ...
-/// await Firebase.initializeApp(
-///   options: DefaultFirebaseOptions.currentPlatform,
-/// );
-/// ```
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
@@ -54,7 +44,8 @@ class DefaultFirebaseOptions {
     appId: '1:926606297242:android:48025eb4055f5ba2a6b723',
     messagingSenderId: '926606297242',
     projectId: 'bilbakalim-28281',
-    databaseURL: 'https://bilbakalim-28281-default-rtdb.europe-west1.firebasedatabase.app',
+    databaseURL:
+        'https://bilbakalim-28281-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'bilbakalim-28281.firebasestorage.app',
   );
 
@@ -63,7 +54,8 @@ class DefaultFirebaseOptions {
     appId: '1:926606297242:ios:ce29cc9a316ede3fa6b723',
     messagingSenderId: '926606297242',
     projectId: 'bilbakalim-28281',
-    databaseURL: 'https://bilbakalim-28281-default-rtdb.europe-west1.firebasedatabase.app',
+    databaseURL:
+        'https://bilbakalim-28281-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'bilbakalim-28281.firebasestorage.app',
     iosBundleId: 'com.example.bilbakalim',
   );

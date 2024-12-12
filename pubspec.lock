@@ -41,6 +41,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.1"
+  cloud_firestore:
+    dependency: "direct main"
+    description:
+      name: cloud_firestore
+      sha256: "852c1a14399be76c71a881d2475392393f2ceef77c0859405a6bcac5ec8c0221"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.5.1"
+  cloud_firestore_platform_interface:
+    dependency: transitive
+    description:
+      name: cloud_firestore_platform_interface
+      sha256: "69f0baeb7ac0577946f82991075b18133fd81441aeda487e41fb5692958117cd"
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.5.1"
+  cloud_firestore_web:
+    dependency: transitive
+    description:
+      name: cloud_firestore_web
+      sha256: ff65ee2f8caafb1bcba3133666d5ee00848f94c677900a368cad593982ef8ba8
+      url: "https://pub.dev"
+    source: hosted
+    version: "4.3.5"
   collection:
     dependency: transitive
     description:
@@ -65,6 +89,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.8"
+  device_info_plus:
+    dependency: "direct main"
+    description:
+      name: device_info_plus
+      sha256: "4fa68e53e26ab17b70ca39f072c285562cfc1589df5bb1e9295db90f6645f431"
+      url: "https://pub.dev"
+    source: hosted
+    version: "11.2.0"
+  device_info_plus_platform_interface:
+    dependency: transitive
+    description:
+      name: device_info_plus_platform_interface
+      sha256: "0b04e02b30791224b31969eb1b50d723498f402971bff3630bca2ba839bd1ed2"
+      url: "https://pub.dev"
+    source: hosted
+    version: "7.0.2"
   fake_async:
     dependency: transitive
     description:
@@ -73,6 +113,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.3.1"
+  ffi:
+    dependency: transitive
+    description:
+      name: ffi
+      sha256: "16ed7b077ef01ad6170a3d0c57caa4a112a38d7a2ed5602e0aca9ca6f3d98da6"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.1.3"
+  file:
+    dependency: transitive
+    description:
+      name: file
+      sha256: a3b4f84adafef897088c160faf7dfffb7696046cb13ae90b508c2cbc95d3b8d4
+      url: "https://pub.dev"
+    source: hosted
+    version: "7.0.1"
   firebase_auth:
     dependency: "direct main"
     description:
@@ -325,6 +381,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.0"
+  win32:
+    dependency: transitive
+    description:
+      name: win32
+      sha256: "8b338d4486ab3fbc0ba0db9f9b4f5239b6697fcee427939a40e720cbb9ee0a69"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.9.0"
+  win32_registry:
+    dependency: transitive
+    description:
+      name: win32_registry
+      sha256: "21ec76dfc731550fd3e2ce7a33a9ea90b828fdf19a5c3bcf556fa992cfa99852"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.5"
 sdks:
   dart: ">=3.5.4 <4.0.0"
   flutter: ">=3.22.0"

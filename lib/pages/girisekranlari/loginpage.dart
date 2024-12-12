@@ -51,40 +51,43 @@ class _LoginPageState extends State<LoginPage> {
     final screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
-      body: Stack(
-        children: [
-          AnimatedContainer(
-            duration: Duration(milliseconds: 700),
-            curve: Curves.easeInOut,
-            width: MediaQuery.of(context).size.width,
-            height: _backgroundHeight == 0 ? screenHeight : _backgroundHeight,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage("assets/images/login_background.png"),
-                fit: BoxFit.cover,
+      body: SingleChildScrollView(
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            AnimatedContainer(
+              duration: const Duration(milliseconds: 700),
+              curve: Curves.easeInOut,
+              width: MediaQuery.of(context).size.width,
+              height: _backgroundHeight == 0 ? screenHeight : _backgroundHeight,
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/images/login_background.png"),
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
-          ),
-          Center(
-              child: _isLogin
-                  ? LoginContent(
-                      onLoginPressed: _animateAndNavigate,
-                    )
-                  : RegisterContent(
-                      onRegisterPressed: _animateAndNavigate,
-                    )),
-          Positioned(
-            top: 50,
-            right: 20,
-            child: TextButton(
-              onPressed: _toggleContent,
-              child: Text(
-                _isLogin ? "Register" : "Login",
-                style: TextStyle(color: Colors.white),
+            Center(
+                child: _isLogin
+                    ? LoginContent(
+                        onLoginPressed: _animateAndNavigate,
+                      )
+                    : RegisterContent(
+                        onRegisterPressed: _animateAndNavigate,
+                      )),
+            Positioned(
+              top: 50,
+              right: 20,
+              child: TextButton(
+                onPressed: _toggleContent,
+                child: Text(
+                  _isLogin ? "Register" : "Login",
+                  style: TextStyle(color: Colors.white),
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

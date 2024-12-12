@@ -1,6 +1,7 @@
 import 'package:bilbakalim/pages/girisekranlari/loginpage.dart';
 import 'package:bilbakalim/pages/daily_message.dart';
 import 'package:bilbakalim/pages/diger.dart';
+import 'package:bilbakalim/pages/girisekranlari/loginpage.dart';
 import 'package:bilbakalim/pages/homepage.dart';
 import 'package:go_router/go_router.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -16,8 +17,8 @@ final router = GoRouter(
   },
   routes: [
     GoRoute(
-      path: '/login',
-      name: 'login',
+      path: '/',
+      name: 'main',
       builder: (context, state) => const LoginPage(),
     ),
     GoRoute(
@@ -26,7 +27,7 @@ final router = GoRouter(
       builder: (context, state) => const DailyMessagePage(),
     ),
     GoRoute(
-      path: '/',
+      path: '/homepage',
       name: 'homepage',
       builder: (context, state) => HomePage(),
       routes: [
