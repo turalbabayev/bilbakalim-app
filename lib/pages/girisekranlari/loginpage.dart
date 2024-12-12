@@ -22,12 +22,13 @@ class _LoginPageState extends State<LoginPage> {
       Navigator.push(
         context,
         PageRouteBuilder(
-          pageBuilder: (context, animation, secondaryAnimation) => Homepage(),
+          pageBuilder: (context, animation, secondaryAnimation) => HomePage(),
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
             const begin = Offset(0.0, 1.0);
             const end = Offset.zero;
             const curve = Curves.easeInOut;
-            var tween = Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
+            var tween =
+                Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
             var offsetAnimation = animation.drive(tween);
             return SlideTransition(
               position: offsetAnimation,
@@ -65,14 +66,13 @@ class _LoginPageState extends State<LoginPage> {
             ),
           ),
           Center(
-            child: _isLogin
-                ? LoginContent(
-                  onLoginPressed: _animateAndNavigate,
-                )
-                : RegisterContent(
-                  onRegisterPressed: _animateAndNavigate,
-                )
-          ),
+              child: _isLogin
+                  ? LoginContent(
+                      onLoginPressed: _animateAndNavigate,
+                    )
+                  : RegisterContent(
+                      onRegisterPressed: _animateAndNavigate,
+                    )),
           Positioned(
             top: 50,
             right: 20,
