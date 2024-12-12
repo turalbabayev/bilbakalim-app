@@ -36,4 +36,12 @@ class FirebaseAuthService {
       throw Exception("Giriş sırasında bir hata oluştu.");
     }
   }
+
+  Future<void> signOut() async {
+    try {
+      await _auth.signOut();
+    } catch (e) {
+      throw Exception("Çıkış yaparken bir sorun oluştu: $e");
+    }
+  }
 }

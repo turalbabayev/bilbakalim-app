@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:bilbakalim/components/login_content.dart';
 import 'package:bilbakalim/components/register_content.dart';
-import 'package:bilbakalim/pages/homepage.dart';
+import 'package:bilbakalim/pages/daily_message.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -22,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
       Navigator.push(
         context,
         PageRouteBuilder(
-          pageBuilder: (context, animation, secondaryAnimation) => HomePage(),
+          pageBuilder: (context, animation, secondaryAnimation) => DailyMessagePage(),
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
             const begin = Offset(0.0, 1.0);
             const end = Offset.zero;
