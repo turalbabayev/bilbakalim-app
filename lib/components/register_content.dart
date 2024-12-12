@@ -14,7 +14,8 @@ class _RegisterContentState extends State<RegisterContent> {
   final _authService = FirebaseAuthService();
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
-  final TextEditingController _confirmPasswordController = TextEditingController();
+  final TextEditingController _confirmPasswordController =
+      TextEditingController();
 
   void _register() async {
     if (_formKey.currentState!.validate()) {
@@ -22,6 +23,8 @@ class _RegisterContentState extends State<RegisterContent> {
         await _authService.registerWithEmailAndPassword(
           email: _emailController.text.trim(),
           password: _passwordController.text.trim(),
+          name: "asd",
+          surname: "asdasd",
         );
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text("Kayıt başarılı!")),
