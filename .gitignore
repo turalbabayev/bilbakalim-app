@@ -1,43 +1,65 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-migrate_working_dir/
+# Önce her şeyi gizle
+*
+**/
+.*
 
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
+# Sadece privacy policy'i göster
+!privacy_policy.md
+!README.md
+!LICENSE
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+# Flutter/Dart özel dosyaları gizle
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
+.packages
 .pub-cache/
 .pub/
-/build/
+build/
+*.iml
+*.lock
+*.log
 
-# Symbolication related
-app.*.symbols
+# iOS özel dosyaları gizle
+ios/
+Pods/
+*.mode1v3
+*.mode2v3
+*.moved-aside
+*.pbxuser
+*.perspectivev3
+*.xccheckout
+*.xcscmblueprint
+*.xcworkspace
+*.xcuserstate
 
-# Obfuscation related
-app.*.map.json
+# Android özel dosyaları gizle
+android/
+.gradle
+local.properties
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# VS Code özel dosyaları gizle
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS özel dosyaları gizle
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Firebase özel dosyaları gizle
+google-services.json
+GoogleService-Info.plist
+firebase_options.dart
+
+# Asset dosyaları gizle
+assets/
+images/
+fonts/
