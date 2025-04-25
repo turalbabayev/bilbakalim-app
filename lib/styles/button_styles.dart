@@ -21,3 +21,24 @@ ButtonStyle cikisyap_buttonStyle = ElevatedButton.styleFrom(
     fontWeight: FontWeight.bold,
   ),
 );
+
+ButtonStyle girisYapButtonStyle = ButtonStyle(
+  backgroundBuilder: (context, states, child) {
+    return Container(
+      alignment: Alignment.center,
+      width: double.infinity,
+      decoration: BoxDecoration(
+        gradient: LinearGradient(colors: [
+          Colors.blue.shade100,
+          Colors.blue.shade500,
+          Colors.blue.shade900,
+        ]),
+      ),
+      child: const Text(
+        "Giriş yap",
+        style: TextStyle(fontSize: 18, color: Colors.white),
+        textAlign: TextAlign.center,
+      ),
+    );
+  },
+);

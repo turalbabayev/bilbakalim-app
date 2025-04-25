@@ -13,4 +13,7 @@ TextStyle textOnBaloonStyle = const TextStyle(
   ],
 );
 
-TextStyle buttonTextStyle = TextStyle();
+TextStyle buttonTextStyle = const TextStyle();
+
+TextStyle onAnswerTextStyle(bool isCorrect) =>
+    TextStyle(fontSize: 20, color: isCorrect ? Colors.green : Colors.red);
