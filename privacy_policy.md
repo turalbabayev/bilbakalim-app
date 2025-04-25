@@ -4,101 +4,129 @@ Son güncellenme: 26.04.2025
 
 ## 1. Giriş
 
-Bil Bakalım uygulamasını ("Uygulama") kullanımınız sırasında gizliliğinize önem veriyoruz. Bu gizlilik politikası, topladığımız bilgileri, bunları nasıl kullandığımızı ve koruduğumuzu açıklar.
+Bil Bakalım uygulamasını ("Uygulama") kullanımınız sırasında gizliliğinize önem veriyoruz. Bu gizlilik politikası, bilgilerinizi nasıl topladığımızı, kullandığımızı, paylaştığımızı ve koruduğumuzu açıklar.
 
 ## 2. Toplanan Bilgiler
 
-### 2.1. Kullanıcı Hesap Bilgileri
+### 2.1. Otomatik Olarak Toplanan Bilgiler
+- Cihaz bilgileri (model, işletim sistemi, benzersiz tanımlayıcılar)
+- IP adresi ve konum bilgileri
+- Uygulama kullanım istatistikleri
+- Performans ve hata raporları
+
+### 2.2. Kullanıcı Tarafından Sağlanan Bilgiler
 - E-posta adresi
 - Kullanıcı adı
-- Kullanıcı adı,soyadı
-
-### 2.2. Kullanım Verileri
+- Profil fotoğrafı (isteğe bağlı)
 - Test sonuçları ve istatistikler
-- Çözülen soru sayısı
-- Başarı oranları
-- Konu bazlı ilerleme durumu
+- Uygulama içi tercihler
 
-### 2.3. Premium Üyelik Bilgileri
+### 2.3. Ödeme Bilgileri
 - Satın alma geçmişi
 - Abonelik durumu
-- Ödeme bilgileri (ödeme sağlayıcı tarafından işlenir)
+- Ödeme bilgileri (Apple Pay/Google Pay üzerinden güvenli şekilde işlenir)
 
 ## 3. Bilgilerin Kullanımı
 
-Topladığımız bilgileri aşağıdaki amaçlar için kullanıyoruz:
+Topladığımız bilgileri şu amaçlarla kullanıyoruz:
 - Hesabınızı oluşturmak ve yönetmek
-- Size özelleştirilmiş test ve sorular sunmak
-- İlerlemenizi takip etmek ve istatistikler oluşturmak
-- Premium özelliklere erişiminizi sağlamak
+- Size özelleştirilmiş içerik ve öneriler sunmak
 - Uygulama performansını ve kullanıcı deneyimini iyileştirmek
-- Teknik sorunları çözmek ve müşteri desteği sağlamak
+- Güvenlik ve doğrulama işlemlerini gerçekleştirmek
+- Yasal yükümlülükleri yerine getirmek
+- Size destek sağlamak
 
-## 4. Veri Güvenliği
+## 4. Bilgi Paylaşımı
+
+### 4.1. Üçüncü Taraflarla Paylaşım
+Bilgilerinizi şu durumlarda paylaşabiliriz:
+- Yasal zorunluluk durumunda
+- Açık rızanız olduğunda
+- Hizmet sağlayıcılarımızla (örn. hosting, analitik)
+
+### 4.2. Hizmet Sağlayıcılar
+Çalıştığımız hizmet sağlayıcılar:
+- Firebase (Google Cloud)
+- Apple/Google ödeme sistemleri
+- Analitik hizmetleri
+
+## 5. Veri Güvenliği
 
 Verilerinizi korumak için:
-- Firebase Authentication kullanarak güvenli kimlik doğrulama sağlıyoruz
-- Verilerinizi şifrelenmiş formatta saklıyoruz
-- Düzenli güvenlik güncellemeleri yapıyoruz
-- Yetkisiz erişimi engellemek için gerekli önlemleri alıyoruz
+- Endüstri standardı şifreleme kullanıyoruz
+- Düzenli güvenlik değerlendirmeleri yapıyoruz
+- Erişim kontrolü uyguluyoruz
+- Veri minimizasyonu ilkesini benimsiyoruz
 
-## 5. Veri Paylaşımı
+## 6. Veri Saklama ve Silme
 
-Kullanıcı verilerini üçüncü taraflarla paylaşmıyoruz, ancak aşağıdaki durumlar istisnadır:
-- Yasal zorunluluk durumunda
-- Kullanıcının açık izni olduğunda
-- Hizmet sağlayıcılarımızla (örn. Firebase, ödeme işlemcileri)
+### 6.1. Saklama Süresi
+- Aktif hesap verileri: Hesap aktif olduğu sürece
+- Kullanım verileri: 24 ay
+- Ödeme bilgileri: Yasal gerekliliklere uygun süre boyunca
 
-## 6. Kullanıcı Hakları
+### 6.2. Veri Silme
+- Hesap silme talebinizde tüm verileriniz 30 gün içinde silinir
+- Yasal gereklilikler nedeniyle saklanması gereken veriler hariç
 
-Kullanıcılar şu haklara sahiptir:
-- Hesap verilerine erişim
-- Veri düzeltme veya güncelleme
-- Hesap silme
+## 7. Kullanıcı Hakları
+
+KVKK kapsamında şu haklara sahipsiniz:
+- Verilerinize erişim
+- Düzeltme talep etme
+- Silme talep etme
+- İşlemeyi sınırlama
 - Veri taşınabilirliği
-- Veri işleme kısıtlaması talep etme
+- İtiraz etme
 
-## 7. Çocukların Gizliliği
+## 8. Çocukların Gizliliği
 
-Uygulamamız 13 yaş ve üzeri kullanıcılar için tasarlanmıştır. Bilerek 13 yaş altı kullanıcılardan veri toplamıyoruz.
+- 13 yaş altı kullanıcılardan bilerek veri toplamıyoruz
+- Ebeveyn izni olmadan 13-18 yaş arası kullanıcılardan kişisel veri toplamıyoruz
+- Çocuk kullanıcı tespit edersek hesabı ve verileri sileriz
 
-## 8. Çerezler ve Takip Teknolojileri
+## 9. Analitik ve Reklamlar
+
+### 9.1. Analitik
+- Firebase Analytics kullanıyoruz
+- Kullanım istatistikleri topluyoruz
+- Performans ölçümleri yapıyoruz
+
+### 9.2. Reklamlar
+- Kişiselleştirilmiş reklam göstermiyoruz
+- Üçüncü taraf reklam ağları kullanmıyoruz
+
+## 10. Uluslararası Veri Transferi
+
+- Veriler Türkiye'de ve AB ülkelerinde işlenir
+- GDPR ve KVKK standartlarına uygun güvenlik önlemleri alınır
+- Gerekli yasal ve teknik korumalar sağlanır
+
+## 11. Çerezler ve Takip
 
 Uygulamamızda:
-- Oturum yönetimi
-- Kullanıcı tercihlerini hatırlama
-- Analitik amaçlı çerezler kullanılmaktadır
+- Zorunlu çerezler (oturum yönetimi için)
+- Analitik çerezler (performans ölçümü için)
+- Tercih çerezleri (kullanıcı ayarları için)
+kullanılmaktadır.
 
-## 9. İletişim
+## 12. Değişiklikler
 
-Gizlilik politikamızla ilgili sorularınız için:
-E-posta: destek@bilbakalimm.com
+- Bu politikayı güncelleyebiliriz
+- Önemli değişiklikler için bildirim yaparız
+- Güncel versiyonu her zaman uygulama içinde bulabilirsiniz
 
-## 10. Değişiklikler
+## 13. İletişim
 
-Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Önemli değişiklikler olduğunda kullanıcılarımızı bilgilendireceğiz.
-
-## 11. Premium Özellikler
-
-Premium üyelik kapsamında:
-- Tüm test içeriklerine sınırsız erişim
-- Özel soru çarkı özellikleri
-- Detaylı istatistikler ve raporlar
-sunulmaktadır.
-
-## 12. Veri Saklama
-
-- Aktif hesap verileri: Hesap aktif olduğu sürece
-- Silinen hesap verileri: 30 gün içinde tamamen silinir
-- Test sonuçları: Kullanıcı hesabı aktif olduğu sürece saklanır
-
-## 13. Güvenlik İhlalleri
-
-Veri ihlali durumunda:
-- Etkilenen kullanıcıları en kısa sürede bilgilendireceğiz
-- Gerekli önlemleri alacağız
-- İlgili makamlara bildireceğiz
+Gizlilik ile ilgili sorularınız için:
+- E-posta: destek@bilbakalimm.com
+- Adres: [Şirket Adresi]
+- Tel: [Telefon Numarası]
 
 ## 14. Yasal Dayanak
 
-Bu gizlilik politikası, Türkiye Cumhuriyeti'nin ilgili veri koruma kanunlarına ve KVKK'ya uygun olarak hazırlanmıştır. 
+Bu politika şunlara uygun olarak hazırlanmıştır:
+- 6698 sayılı KVKK
+- GDPR
+- Apple App Store politikaları
+- Google Play Store politikaları 
