@@ -45,6 +45,14 @@ Bil Bakalım uygulamasını ("Uygulama") kullanımınız sırasında gizliliğin
 ### 3.2. Bildirim Hizmetleri
 - OneSignal: Bildirim gönderimi ve yönetimi
 - Kullanıcı tercihlerine bağlı bildirim izinleri
+- Bildirimler şu amaçlarla kullanılır:
+  * Yeni soru ve içerik güncellemeleri hakkında bilgilendirme
+  * Günlük pratik hatırlatmaları
+  * Başarı ve ilerleme bildirimleri
+  * Önemli uygulama güncellemeleri
+  * Premium üyelik avantajları ve kampanyalar
+- Bildirim izinlerini istediğiniz zaman uygulama ayarlarından değiştirebilir veya tamamen kapatabilirsiniz
+- Bildirimler kişiselleştirilebilir ve kategorilere göre yönetilebilir
 
 ### 3.3. Ödeme İşlemleri
 - RevenueCat: Premium üyelik ve ödeme işlemleri yönetimi
@@ -53,6 +61,15 @@ Bil Bakalım uygulamasını ("Uygulama") kullanımınız sırasında gizliliğin
 ### 3.4. Analitik ve İzleme
 - Device Info Plus: Cihaz bilgilerinin toplanması
 - Firebase Analytics: Kullanım istatistikleri ve performans analizi
+
+### 3.5. Ekran Koruması
+- Screen Protector: Uygulama içeriğinin güvenliğini sağlamak için kullanılır
+- Bu özellik şu amaçlarla kullanılır:
+  * Uygulama içeriğinin ekran görüntüsü alınmasını engelleme
+  * Hassas bilgilerin korunması
+  * Sınav ve test içeriklerinin güvenliğinin sağlanması
+- Bu koruma sadece uygulama açıkken aktif olur ve cihazınızın diğer özelliklerini etkilemez
+- Kullanıcılar bu özelliği uygulama ayarlarından kapatabilir
 
 ## 4. Verilerin Kullanımı
 
